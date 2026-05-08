@@ -8,7 +8,7 @@ public class practice {
 
         for(Book b : booklist){
             System.out.println(b);
-        }
+        } 
 
         for(int i = 0; i < booklist.size(); i++){
             System.out.println(i + ": "+ booklist.get(i).getTitle());
