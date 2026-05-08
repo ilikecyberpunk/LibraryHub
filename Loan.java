@@ -7,7 +7,7 @@ public class Loan {
     private Date loanDate;
     private Date returnDate;
 
-    public Loan(int loanId, int bookId, int memberId, Date loandate){
+    public Loan(int loanId, int bookId, int memberId, Date loanDate){
         this.loanId = loanId;
         this.bookId = bookId;
         this.memberId = memberId;
