@@ -4,11 +4,11 @@ public class Book{
     private String author;
     private boolean isAvailable;
 
-    public Book(int bookId, String title, String author){
+    public Book(int bookId, String title, String author, Boolean isAvailable){
         this.bookId = bookId;
         this.title = title;
         this.author = author;
-        this.isAvailable = true;
+        this.isAvailable = isAvailable;
     }
 
     public int getBookId(){
@@ -19,7 +19,11 @@ public class Book{
         return title;
     }
 
-    public boolean isAvailable(){
+    public String getAuthor(){
+        return author;
+    }
+
+    public Boolean isAvailable(){
         return isAvailable;
     }
 
@@ -34,7 +38,7 @@ public class Book{
 
     //for test
     public static void main(String[] args){
-        Book a = new Book(123, "죄와 벌", "도프스예프스키");
+        Book a = new Book(123, "죄와 벌", "도프스예프스키", true);
         a.toString();
     }
 }

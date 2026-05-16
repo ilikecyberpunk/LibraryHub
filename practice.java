@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class practice {
     public static void main(String[] args){
         ArrayList<Book> booklist = new ArrayList<>();
-        booklist.add(new Book(1234, "죄와 벌", "키예슬로프스키"));
-        booklist.add(new Book(1235, "변신", "프란츠 카프카"));
+        booklist.add(new Book(1234, "죄와 벌", "키예슬로프스키", true));
+        booklist.add(new Book(1235, "변신", "프란츠 카프카", true));
 
         for(Book b : booklist){
             System.out.println(b);
