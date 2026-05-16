@@ -16,7 +16,7 @@ public class BookDAOImpl implements BookDAO {
             pstmt.setString(2, book.getAuthor());
             pstmt.setString(3, book.isAvailable() ? "Y": "N");
             pstmt.executeUpdate();
-            System.out.printf("추가됨 : %s\n", book.getTitle());
+            System.out.printf("책 추가됨 : %s\n", book.getTitle());
         }
 
         catch(Exception e){
@@ -93,7 +93,7 @@ public class BookDAOImpl implements BookDAO {
             pstmt.setString(3, book.isAvailable() ? "Y" : "N");
             pstmt.setInt(4, book.getBookId());
             pstmt.executeUpdate();
-            System.out.println("수정완료");
+            System.out.println("책 정보 수정완료");
         }
         catch(Exception e){
             System.out.println(e);
@@ -112,7 +112,7 @@ public class BookDAOImpl implements BookDAO {
             pstmt = con.prepareStatement(sql);
             pstmt.setInt(1, BookId);
             pstmt.executeUpdate();
-            System.out.println("삭제완료");
+            System.out.println("책 삭제완료");
         }
         catch(Exception e){
             System.out.println(e);
