@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.sql.*;
 
 public class BookDAOImpl implements BookDAO {
     //임시로 저장 지금은 db없음
@@ -6,8 +7,16 @@ public class BookDAOImpl implements BookDAO {
     
     @Override
     public void addBook(Book book){
-        storage.add(book);
-        System.out.println("추가됨 : " + book.getTitle());
+        Connection con = DBConnection.getConnection();
+        PreparedStatement pstmt = null;
+        String sql = "INSERT INTO HUMAN VALUES(alina, 175.0, 0000-00-00)";
+
+        try{
+            pstmt = con.prepareStatement(sql);
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
     }
 
     @Override
