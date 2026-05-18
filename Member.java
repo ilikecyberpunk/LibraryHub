@@ -1,4 +1,7 @@
-public class Member {
+abstract class User {
+}
+
+public class Member extends User{
     private int memberId;
     private String name;
     private String phone;

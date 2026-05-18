@@ -5,4 +5,6 @@ public interface MemberDAO {
     Member findById(int memberId);
     ArrayList<Member>findAll();
     public void deleteMember(int memberId);
+
+    
 }
