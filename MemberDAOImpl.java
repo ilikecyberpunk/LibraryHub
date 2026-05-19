@@ -101,7 +101,7 @@ public class MemberDAOImpl implements MemberDAO {
     public static void main(String[] args){
         //테스트
         MemberDAOImpl a = new MemberDAOImpl();
-        // a.addMember(new Member(21,"kimtaeho", "01012345678"));
+        a.addMember(new Member(231,"닝겐", "01012345678"));
         // a.findById(21);
         // a.deleteMember(2);
     }

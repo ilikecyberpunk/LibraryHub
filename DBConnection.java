@@ -47,3 +47,9 @@ public class DBConnection {
 
 
 }
+
+// Connection (통로): "데이터베이스라는 성(Castle)으로 들어가는 다리를 놓는다."
+
+// Statement (전령): "종이에 SQL이라는 명령어를 적어서 성 안으로 보낸다."
+
+// ResultSet (전리품): "성에서 가져온 데이터 주머니에서 하나씩 꺼내 확인한다."
